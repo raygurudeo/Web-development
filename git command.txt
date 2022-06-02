@@ -1,0 +1,16 @@
+Git command
+
+git add -A
+git remote add origin <link>
+git commit -m 'message'
+git push -u -f origin master
+
+
+to revert back last changes
+
+git revert HEAD
+git push -u -f origin master
+
+# to skip audit part while installing dependinces into existing project
+
+ npm install --no-audit
