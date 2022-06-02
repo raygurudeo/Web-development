@@ -1,4 +1,0 @@
-to revert back last changes
-
-git revert HEAD
-git push -u -f origin master
