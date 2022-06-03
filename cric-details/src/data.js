@@ -1,0 +1,42 @@
+export default [
+    {
+        id: 1,
+        name: 'MS Dhoni',
+        age: 40,
+        country: 'India',
+        role: 'Wicketkeeper batsman',
+        image: 'https://cdn.pixabay.com/photo/2020/12/16/06/01/mahendra-singh-dhoni-5835730__340.png',
+    },
+    {
+        id: 2,
+        name: 'Sachin Tendulkar',
+        age: 45,
+        country: 'India',
+        role: 'Batsman',
+        image: 'https://cdn.pixabay.com/photo/2020/12/16/06/13/sachin-tendulkar-5835753__340.png',
+    },
+    {
+        id: 3,
+        name: 'Virat kohli',
+        age: 34,
+        country: 'India',
+        role: 'Batsman',
+        image: 'https://cdn.pixabay.com/photo/2017/01/31/21/45/cricket-players-2027502__480.png',
+    },
+    {
+        id: 4,
+        name: 'Yuvraj singh',
+        age: 40,
+        country: 'India',
+        role: 'All-rounder',
+        image: 'https://cdn.pixabay.com/photo/2020/12/16/06/10/virat-kohli-5835744__340.png',
+    },
+    {
+        id: 5,
+        name: 'Harbhajan singh',
+        age: 42,
+        country: 'India',
+        role: 'Bowling',
+        image: 'https://cdn.pixabay.com/photo/2020/12/16/05/47/cricketer-harbhajan-singh-5835721__340.png',
+    },
+];

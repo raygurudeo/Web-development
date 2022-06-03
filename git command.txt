@@ -2,7 +2,7 @@ Git command
 
 git add -A
 git remote add origin <link>
-git commit -m 'message'
+git commit -m "message"
 git push -u -f origin master
 
 
@@ -14,3 +14,8 @@ git push -u -f origin master
 # to skip audit part while installing dependinces into existing project
 
  npm install --no-audit
+
+
+ #React command
+
+ -> npx create-react-app app-name (run in intrigrated terminal)
