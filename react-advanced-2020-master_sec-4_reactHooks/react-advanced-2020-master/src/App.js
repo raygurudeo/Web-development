@@ -1,12 +1,12 @@
 import React from 'react'
-import UseStateCounter from './tutorial/1-useState/setup/5-useState-counter'
+import UseEffectBasics from './tutorial/2-useEffect/setup/1-useEffect-basics'
 
 function App() {
   return (
-    <div>
+    <div style={{textAlign: 'center'}}>
       <div className='container'>
       </div>
-      <UseStateCounter />
+      <UseEffectBasics />
     </div>
   )
 }
