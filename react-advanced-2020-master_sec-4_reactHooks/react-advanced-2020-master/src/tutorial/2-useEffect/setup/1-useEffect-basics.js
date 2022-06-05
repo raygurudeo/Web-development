@@ -9,7 +9,7 @@ const UseEffectBasics = () => {
     if (value > 1) {
       document.title = `new title (${value})`;
     }
-  })
+  }, [value])
   console.log("render component");
   return <>
     <h1>{value}</h1>
