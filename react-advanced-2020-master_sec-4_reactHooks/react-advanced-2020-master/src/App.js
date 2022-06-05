@@ -1,12 +1,12 @@
 import React from 'react'
-import MultipleReturns from './tutorial/3-conditional-rendering/setup/1-multiple-returns'
+import ShowHide from './tutorial/3-conditional-rendering/setup/3-show-hide'
 
 function App() {
   return (
     <div style={{textAlign: 'center'}}>
       <div className='container'>
       </div>
-      <MultipleReturns />
+      <ShowHide />
     </div>
   )
 }
