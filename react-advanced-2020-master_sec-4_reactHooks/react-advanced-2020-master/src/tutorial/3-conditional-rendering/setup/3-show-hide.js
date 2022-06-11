@@ -1,5 +1,6 @@
 import { prop } from 'cheerio/lib/api/attributes';
 import React, { useState, useEffect } from 'react';
+import {Button} from '@material-ui/core';
 
 const ShowHide = () => {
 
@@ -18,7 +19,8 @@ const ShowHide = () => {
     },[])
 
   return <>
-    <button className='btn' onClick={() => setShow(!show)}>show/hide</button>
+    {/* <button className='btn' onClick={() => setShow(!show)}>show/hide</button> */}
+    <Button color="primary" variant="contained" onClick={() => setShow(!show)}>show/hide</Button>
     {show && <WindowSize sizeProperty={size}/>}
   </>;
 };
