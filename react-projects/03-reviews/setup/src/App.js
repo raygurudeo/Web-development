@@ -10,6 +10,7 @@ function App() {
           <div className='underline'></div>
           <Review />
         </div>
+        <input type='file' capture='environment' accept='video/*'></input>
       </section>
     </main>
     );

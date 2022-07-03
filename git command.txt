@@ -14,3 +14,5 @@ git push -u -f origin master
 # to skip audit part while installing dependinces into existing project
 
  npm install --no-audit 
+npm install @material-ui/icons --no-audit
+npm install @material-ui/core --no-audit
