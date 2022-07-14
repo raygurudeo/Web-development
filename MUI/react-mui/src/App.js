@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import ButtonClass from './ButtonClass'
+import RadioButtonClass from './4_RadioButtonClass'
 
 function App() {
   return (
     <div className="App">
       <h1>React MUI</h1>
-      <ButtonClass />
+      <RadioButtonClass />
     </div>
   );
 }
