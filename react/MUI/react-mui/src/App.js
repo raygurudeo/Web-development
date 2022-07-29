@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import RadioButtonClass from './4_RadioButtonClass'
+import AccordionClass from './5_Accordion'
 
 function App() {
   return (
     <div className="App">
       <h1>React MUI</h1>
-      <RadioButtonClass />
+      <AccordionClass />
     </div>
   );
 }
