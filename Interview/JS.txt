@@ -1,0 +1,87 @@
+========= Question on hoisting ===========
+
+function abc() {
+	console.log(a,b,c);
+	const a=10;		// Can't access b before init
+	let b=2;		// Refrence error
+	var c = 3;		// undefined
+)
+abc();
+
+Note: a,b,c all are hoisted but a is hoisted in global scope but b is hoisted local scope it means
+	in temporal dead zone it means, b and c is hoisted but not declared so, it will throw error as mentioned.
+
+============= Question on Implicit and explicit binding ====================
+
+var obj = {
+	name: 'abc',
+	display: function(){
+		console.log(this.name);
+	},
+}
+
+var obj1 = {
+	name: 'xyz',
+}
+
+obj.display.call(obj1);  // xyz
+
+----
+Note: so, its gonna provide a new context (obj1) to this function display that will refer name inside obj1. 
+	this is called explicit binding.
+
+obj.display();  // abc
+
+Note: this will take a local context where this is reffering to local key name.
+
+--------------- what happen if we use arrow function instead on annoynomus function----------->
+
+var obj = {
+	name: 'abc',
+	display: () => {
+		console.log(this.name);
+	},
+}
+
+var obj1 = {
+	name: 'xyz',
+}
+
+obj.display.call(obj1); // will not print anything
+
+Note=> actually arrow function does not have this keyword as function expression. when we use this inside 
+	a arrow function this will still refer to window object as its a global object.
+
+	-> Arrow function also does not support Arguments binding and new keyword.
+
+
+======================================= Implementing cashing/memoize function ====================================================
+
+function myMemoize(fn, context) {
+    const res = {};
+    return (...args) => {
+        var argsCashe = JSON.stringify(args);
+        if(!res[argsCashe]) {
+            res[argsCashe] = fn.call(context || this, ...args);
+        } else {
+            return res[argsCashe];
+        }
+    }
+}
+
+const findSquare = (num1, num2) => {
+    for(let i=0; i<=10000000000; i++){}
+    return num1*num2;
+}
+
+const memoizedFindSquare = myMemoize(findSquare);
+console.time("first call");
+console.log(memoizedFindSquare(234, 435));
+console.timeEnd("first call");
+
+console.time("first call");
+console.log(memoizedFindSquare(234, 435));
+console.timeEnd("first call");
+
+--------------------->  memoization is a concept where we store a value in a cache which we are going to call 
+		frequently in our project with same value. it actually makes our program faster.
